@@ -1,10 +1,10 @@
-var gulp = require('gulp'),
-    browserify = require('browserify'),
-    concat = require('gulp-concat');
+gulp = require('gulp');
+browserify = require('browserify');
+concat = require('gulp-concat');
 
 gulp.task('browserify', function () {
   gulp.src('src/js/main.js')
-    .pipe(browserify({transform: 'reactify'}))
+    // .pipe(browserify({transform: 'reactify'}))
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/js'));
 });
@@ -14,6 +14,6 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['browserify', 'concat'], function () {
-  return gulp.watch('src/**/*.*', ['browserify', 'concat']);
+gulp.task('default', ['browserify', 'copy'], function () {
+  return gulp.watch('src/**/*.*', ['browserify', 'copy']);
 });
