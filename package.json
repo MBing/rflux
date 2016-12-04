@@ -8,17 +8,17 @@
   },
   "author": "mbing",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "es6-promise": "^4.0.5",
     "flux": "^3.1.0",
+    "react": "^15.4.0"
+  },
+  "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.1",
+    "http-server": "^0.9.0",
     "object-assign": "^4.1.0",
-    "react": "^15.4.0",
     "reactify": "^1.1.1"
-  },
-  "dependencies": {
-    "http-server": "^0.9.0"
   }
 }
