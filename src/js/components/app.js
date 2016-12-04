@@ -1,4 +1,4 @@
-import React { Components } from 'react';
+import React, { Components } from 'react';
 import AppActions from '../actions/app-actions';
 import AppStore from '../stores/app-store';
 

@@ -1,4 +1,4 @@
-import React { Components } from 'react';
+import React, { Components } from 'react';
 import App from 'components/app';
 
 export default class MainApp extends Components {
